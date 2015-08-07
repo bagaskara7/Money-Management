@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\bagaskara\AndroidStudioProjects\MoneyManagement\app\build\intermediates\exploded-aar\com.android.support\design\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="fc63b820d54c8a27a3a614bdd93920e0076581c2">
+        <dex dex="C:\Users\bagaskara\AndroidStudioProjects\MoneyManagement\app\build\intermediates\pre-dexed\release\classes-d08224dbac6a13a5c362ed099bd7be7f46aa2c68.jar" />
+    </item>
+    <item
+        jar="C:\Users\bagaskara\AndroidStudioProjects\MoneyManagement\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="C:\Users\bagaskara\AndroidStudioProjects\MoneyManagement\app\build\intermediates\pre-dexed\release\classes-857d8d4f3875f69a4a94d7660a993ddd7a0daf08.jar" />
+    </item>
+    <item
+        jar="C:\Users\bagaskara\AndroidStudioProjects\MoneyManagement\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="a78183f30e769a98ab4820794f597763088d3065">
+        <dex dex="C:\Users\bagaskara\AndroidStudioProjects\MoneyManagement\app\build\intermediates\pre-dexed\debug\classes-5138c21301c15d47bd649ec95c3294f975c1f3fc.jar" />
+    </item>
+    <item
+        jar="C:\Users\bagaskara\.gradle\caches\modules-2\files-2.1\com.github.PhilJay\MPAndroidChart\v2.1.0\ec46f9251e1e0ee60e1b6beae8b16f2e0fdee474\MPAndroidChart-v2.1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ec46f9251e1e0ee60e1b6beae8b16f2e0fdee474">
+        <dex dex="C:\Users\bagaskara\AndroidStudioProjects\MoneyManagement\app\build\intermediates\pre-dexed\debug\MPAndroidChart-v2.1.0-b421e03d6099e418a7bfe792db762c43b945777c.jar" />
+    </item>
+    <item
+        jar="C:\Users\bagaskara\AndroidStudioProjects\MoneyManagement\app\build\intermediates\exploded-aar\com.github.rey5137\material\1.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="60dee46bb1ba50fb53b5d064694dc849246596fd">
+        <dex dex="C:\Users\bagaskara\AndroidStudioProjects\MoneyManagement\app\build\intermediates\pre-dexed\release\classes-213bc117b9fa530e3a6dc97660465cd4ee68381e.jar" />
+    </item>
+    <item
+        jar="C:\Users\bagaskara\AndroidStudioProjects\MoneyManagement\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="C:\Users\bagaskara\AndroidStudioProjects\MoneyManagement\app\build\intermediates\pre-dexed\release\internal_impl-22.2.0-2b382e21be053e3dea5652ea94b11517c2fc9bc2.jar" />
+    </item>
+    <item
+        jar="C:\Users\bagaskara\AndroidStudioProjects\MoneyManagement\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="29ebc7e04d877062317c8cc0e68b20f0c1fcda66">
+        <dex dex="C:\Users\bagaskara\AndroidStudioProjects\MoneyManagement\app\build\intermediates\pre-dexed\debug\classes-d3dff250e86c235130cd36e5c9be2f2aa97c7010.jar" />
+    </item>
+    <item
+        jar="C:\Users\bagaskara\AndroidStudioProjects\MoneyManagement\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.5.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e7b35244f50663b3f8d150714bca9ecd7a290da1">
+        <dex dex="C:\Users\bagaskara\AndroidStudioProjects\MoneyManagement\app\build\intermediates\pre-dexed\debug\classes-67d260e959f62b18b87983c6cfc047e1d110e19c.jar" />
+    </item>
+    <item
+        jar="C:\Users\bagaskara\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="C:\Users\bagaskara\AndroidStudioProjects\MoneyManagement\app\build\intermediates\pre-dexed\release\support-annotations-22.2.0-631514e9fa562944d1bb8333cf5242f684fd93c9.jar" />
+    </item>
+    <item
+        jar="C:\Users\bagaskara\AndroidStudioProjects\MoneyManagement\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\21.0.3\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
+        <dex dex="C:\Users\bagaskara\AndroidStudioProjects\MoneyManagement\app\build\intermediates\pre-dexed\release\classes-ebf6ceb8e39892bf1d616ecac7a9c113bd9c6a07.jar" />
+    </item>
+    <item
+        jar="C:\Users\bagaskara\AndroidStudioProjects\MoneyManagement\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="C:\Users\bagaskara\AndroidStudioProjects\MoneyManagement\app\build\intermediates\pre-dexed\release\classes-d410e164949c3cef9a273690cdbba8c7e21263c6.jar" />
+    </item>
+    <item
+        jar="C:\Users\bagaskara\AndroidStudioProjects\MoneyManagement\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="5b37cf49773f7f17aca9830efd3053b0cac56728">
+        <dex dex="C:\Users\bagaskara\AndroidStudioProjects\MoneyManagement\app\build\intermediates\pre-dexed\debug\classes-c037c5df16dbed7aa134eb8ceee2f5e10120aab1.jar" />
+    </item>
+
+</items>
