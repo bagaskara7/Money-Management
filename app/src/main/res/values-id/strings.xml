@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Money Management</string>
+    <string name="about_text_bottom">Kelola uang anda, kelola hidup anda.\nHak Cipta © 2015 - Andronomy Studio.</string>
+    <string name="about_text_top">Aplikasi ini dibuat oleh Andronomy Studio. Kunjungi website kami untuk mengetahui semua fiturnya. Ikon dibuat oleh: www.androidicons.com, www.icons8.com dan Google Material Icons.</string>
+    <string name="about_title">Tentang Money Management</string>
+    <string name="account">Akun</string>
+    <string name="action_add_acount">Tambah Akun</string>
+    <string name="action_settings">Pengaturan</string>
+    <string name="add_transfer_btn">Tambah Transfer</string>
+    <string name="amount_submit">Masukkan Jumlah Di sini …</string>
+    <string name="balance_wallet_icon">Ikon Dompet Saldo</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3245172177688438/6821859504</string>
+    <string name="button_submit">Simpan</string>
+    <string name="cancel_str">Batal</string>
+    <string name="cancelled_str">Dibatalkan</string>
+    <string name="cur_balance">Saldo Sekarang</string>
+    <string name="drawer_close">Tutup</string>
+    <string name="drawer_open">Buka</string>
+    <string name="from_acc_str">Dari Akun:</string>
+    <string name="hello_world">Halo Dunia!</string>
+    <string name="income_text">Tambah Penghasilan</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-3245172177688438/5345126301</string>
+    <string name="last_used">Terakhir Dipakai</string>
+    <string name="menu_about">Tentang</string>
+    <string name="menu_accounts">Akun</string>
+    <string name="menu_history">Riwayat</string>
+    <string name="menu_home">Beranda</string>
+    <string name="menu_settings">Pengaturan</string>
+    <string name="menu_transfer">Transfer</string>
+    <string name="month_statistics_chart">Chart pengeluaran bulan ini.</string>
+    <string name="my_balance">Saldo saya</string>
+    <string name="my_income">Pemasukan saya</string>
+    <string name="my_outcome">Pengeluaran saya</string>
+    <string name="never_str">Tidak pernah</string>
+    <string name="no_data_warning">Tidak ada data untuk ditampilkan di chart.</string>
+    <string name="notes_submit">Masukkan Catatan Di sini (Opsional) …</string>
+    <string name="outcome_text">Tambah Pengeluaran</string>
+    <string name="selected_date_str">"Tanggal terpilih adalah "</string>
+    <string name="title_activity_accounts">Akun</string>
+    <string name="title_activity_add_income">Tambah Penghasilan</string>
+    <string name="title_activity_add_outcome">Tambah Pengeluaran</string>
+    <string name="title_activity_add_transfer">Tambah Transfer</string>
+    <string name="title_activity_history">Riwayat</string>
+    <string name="title_activity_history_transfer">Riwayat Transfer</string>
+    <string name="title_activity_main">Money Management</string>
+    <string name="title_activity_settings">Pengaturan</string>
+    <string name="title_activity_transfer">Transfer</string>
+    <string name="to_acc_str">Ke akun:</string>
+    <string name="transfer_history">Riwayat Transfer</string>
+    <string name="version">Versi</string>
+    <string name="visit_button">Kunjungi website</string>
+    <string name="warn_failed_input">Terdapat error!</string>
+    <string name="warn_success_input">Data berhasil disimpan!</string>
+    <string name="eng_uk_str">Britania Raya</string>
+    <string name="eng_us_str">Amerika</string>
+    <string name="save_settings_btn">Simpan perubahan</string>
+    <string name="headline_user_str" />
+    <string name="headline_hello_str">Halo pengguna</string>
+    <string name="settings_saved_str">Pengaturan telah disimpan!</string>
+    <string name="choose_cat_label">Pilih kategori:</string>
+    <string name="choose_acc_label">Pilih akun:</string>
+    <string name="acc_to_label">Ke akun:</string>
+    <string name="acc_from_label">Dari akun:</string>
+    <string name="choose_lang_label">Pilih bahasa yang anda disukai:</string>
+    <string name="choose_curr_label">Pilih mata uang yang anda disukai:</string>
+    <string name="menu_reports">Laporan</string>
+    <!--- Accounts -->
+    <string name="account_cash">Kas</string>
+    <string name="account_payment_card">Kartu Pembayaran</string>
+    <!--- Categories -->
+    <string name="category_deposit">Deposito</string>
+    <string name="category_reward">Hadiah</string>
+    <string name="category_salary">Gaji</string>
+    <string name="category_savings">Tabungan</string>
+    <string name="category_bills">Rekening</string>
+    <string name="category_car">Mobil</string>
+    <string name="category_clothes">Pakaian</string>
+    <string name="category_communication">Komunikasi</string>
+    <string name="category_computer">Komputer</string>
+    <string name="category_drinks">Minuman</string>
+    <string name="category_eating">Makanan</string>
+    <string name="category_entertainment">Hiburan</string>
+    <string name="category_food">Makanan</string>
+    <string name="category_health">Kesehatan</string>
+    <string name="category_house">Rumah</string>
+    <string name="category_pets">Peliharaan</string>
+    <string name="category_sport">Olahraga</string>
+    <string name="category_toiletry">Peralatan Toilet</string>
+    <string name="category_transportation">Transportasi</string>
+
+    <string name="no_data_recycler">Tidak ada data untuk ditampilkan.</string>
+    <string-array name="tabs">
+        <item>Pemasukan</item>
+        <item>Pengeluaran</item>
+    </string-array>
+</resources>

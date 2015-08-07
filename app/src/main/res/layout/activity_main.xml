@@ -1,0 +1,192 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.andronomy.moneymanagement.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/app_bar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/top_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1.0">
+
+                    <com.rey.material.widget.Button
+                        android:id="@+id/income_button"
+                        style="@style/Material.Drawable.Ripple.Wave"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight=".5"
+                        android:background="@color/colorPrimary"
+                        android:padding="5dp"
+                        android:text="@string/income_text"
+                        android:textColor="@color/colorText"
+                        app:rd_enable="true" />
+
+                    <com.rey.material.widget.Button
+                        android:id="@+id/outcome_button"
+                        style="@style/Material.Drawable.Ripple.Wave.Light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight=".5"
+                        android:background="@color/colorAccent"
+                        android:padding="5dp"
+                        android:text="@string/outcome_text"
+                        android:textColor="@color/colorText"
+                        app:rd_enable="true" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/bottom_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/top_content"
+                    android:fadeScrollbars="true"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp">
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_income_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        card_view:cardCornerRadius="0dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_margin="5dp">
+
+                            <ImageView
+                                android:id="@+id/imageIncomeView"
+                                android:layout_width="48dp"
+                                android:layout_height="match_parent"
+                                android:contentDescription="@string/balance_wallet_icon"
+                                android:src="@drawable/ic_action_import"
+                                android:tint="@color/colorTextSecondary" />
+
+                            <com.rey.material.widget.TextView
+                                android:id="@+id/income_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentTop="true"
+                                android:layout_toEndOf="@+id/imageIncomeView"
+                                android:layout_toRightOf="@+id/imageIncomeView"
+                                android:gravity="center_vertical"
+                                android:text="@string/my_income"
+                                android:textColor="@color/colorTextSecondary" />
+
+                            <com.rey.material.widget.TextView
+                                android:id="@+id/income_number_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentTop="true"
+                                android:layout_toEndOf="@+id/income_text"
+                                android:layout_toRightOf="@+id/income_text"
+                                android:gravity="center_vertical|end"
+                                android:text="@string/my_income"
+                                android:textColor="@color/colorTextSecondary" />
+
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/card_outcome_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:layout_below="@+id/card_income_view"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        card_view:cardCornerRadius="0dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_margin="5dp">
+
+                            <ImageView
+                                android:id="@+id/imageOutcomeView"
+                                android:layout_width="48dp"
+                                android:layout_height="match_parent"
+                                android:contentDescription="@string/balance_wallet_icon"
+                                android:src="@drawable/ic_action_export"
+                                android:tint="@color/colorTextSecondary" />
+
+                            <com.rey.material.widget.TextView
+                                android:id="@+id/outcome_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentTop="true"
+                                android:layout_toEndOf="@+id/imageOutcomeView"
+                                android:layout_toRightOf="@+id/imageOutcomeView"
+                                android:gravity="center_vertical"
+                                android:text="@string/my_outcome"
+                                android:textColor="@color/colorTextSecondary" />
+
+                            <com.rey.material.widget.TextView
+                                android:id="@+id/outcome_number_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentTop="true"
+                                android:layout_toEndOf="@+id/outcome_text"
+                                android:layout_toRightOf="@+id/outcome_text"
+                                android:gravity="center_vertical|end"
+                                android:text="@string/my_outcome"
+                                android:textColor="@color/colorTextSecondary" />
+
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/piechart"
+                        android:layout_width="match_parent"
+                        android:layout_height="330dp"
+                        android:layout_below="@+id/card_outcome_view"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp" />
+
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/piechart"
+                        android:layout_gravity="center" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/drawer_header"
+        app:menu="@menu/menu_drawer" />
+</android.support.v4.widget.DrawerLayout>

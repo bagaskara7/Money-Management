@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:id="@+id/from_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:padding="5dp">
+
+                <com.rey.material.widget.TextView
+                    android:id="@+id/history_transfer_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/from_acc_str"
+                    android:textColor="@color/colorTextSecondary" />
+
+                <ImageView
+                    android:id="@+id/history_transfer_image_header"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_below="@+id/history_transfer_header"
+                    android:src="@drawable/ic_action_help"
+                    android:tint="@color/colorTextSecondary" />
+
+                <com.rey.material.widget.TextView
+                    android:id="@+id/history_transfer_acc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/history_transfer_header"
+                    android:layout_marginTop="7dp"
+                    android:layout_toEndOf="@+id/history_transfer_image_header"
+                    android:layout_toRightOf="@+id/history_transfer_image_header"
+                    android:gravity="start"
+                    android:text="Sample Text"
+                    android:textColor="@color/colorTextSecondary" />
+
+                <com.rey.material.widget.TextView
+                    android:id="@+id/history_transfer_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/history_transfer_image_header"
+                    android:gravity="center"
+                    android:text="Amount"
+                    android:textColor="@color/colorTextSecondary" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:padding="5dp">
+
+                <com.rey.material.widget.TextView
+                    android:id="@+id/history_transfer_header_to"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/to_acc_str"
+                    android:textColor="@color/colorTextSecondary" />
+
+                <ImageView
+                    android:id="@+id/history_transfer_image_header_to"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/history_transfer_header_to"
+                    android:src="@drawable/ic_action_help"
+                    android:tint="@color/colorTextSecondary" />
+
+                <com.rey.material.widget.TextView
+                    android:id="@+id/history_transfer_acc_to"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/history_transfer_header_to"
+                    android:layout_marginTop="7dp"
+                    android:layout_toLeftOf="@+id/history_transfer_image_header_to"
+                    android:layout_toStartOf="@+id/history_transfer_image_header_to"
+                    android:gravity="end"
+                    android:text="Sample Text"
+                    android:textColor="@color/colorTextSecondary" />
+
+                <com.rey.material.widget.TextView
+                    android:id="@+id/history_transfer_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/history_transfer_image_header_to"
+                    android:gravity="center"
+                    android:text="Date"
+                    android:textColor="@color/colorTextSecondary" />
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

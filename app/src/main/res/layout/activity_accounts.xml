@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.andronomy.moneymanagement.AccountsActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_bar"
+        android:layout_margin="5dp"
+        android:weightSum="1">
+
+        <com.rey.material.widget.Button
+            android:id="@+id/add_transfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2.5dp"
+            android:layout_marginRight="2.5dp"
+            android:layout_weight=".5"
+            android:background="@color/colorPrimary"
+            android:text="@string/add_transfer_btn"
+            android:textColor="@color/colorText" />
+
+        <com.rey.material.widget.Button
+            android:id="@+id/history_transfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginStart="2.5dp"
+            android:layout_weight=".5"
+            android:background="@color/colorAccent"
+            android:text="@string/transfer_history"
+            android:textColor="@color/colorText" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/contentAccount"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buttons"
+        android:fadeScrollbars="true"
+        android:scrollbars="vertical" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"></com.google.android.gms.ads.AdView>
+</RelativeLayout>

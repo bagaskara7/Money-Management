@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+            <ImageView
+                android:id="@+id/historyImage"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:src="@drawable/ic_action_help"
+                android:tint="@color/colorTextSecondary" />
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/historyCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/historyImage"
+                android:layout_toEndOf="@+id/historyImage"
+                android:text="Sample Text"
+                android:textColor="@color/colorTextSecondary" />
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/historyAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_toRightOf="@+id/historyImage"
+                android:layout_toEndOf="@+id/historyImage"
+                android:layout_below="@+id/historyCategory"
+                android:gravity="center"
+                android:text="Sample Text"
+                android:textColor="@color/colorTextSecondary" />
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/historyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_toRightOf="@+id/historyImage"
+                android:layout_toEndOf="@+id/historyImage"
+                android:layout_below="@+id/historyAmount"
+                android:gravity="left"
+                android:text="Sample Text"
+                android:textColor="@color/colorTextSecondary" />
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/historyDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:text="Sample Text"
+                android:textColor="@color/colorTextSecondary" />
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/historyAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_below="@+id/historyDate"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:text="Sample Text"
+                android:textColor="@color/colorTextSecondary" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

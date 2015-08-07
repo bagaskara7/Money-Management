@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.andronomy.moneymanagement.AddIncomeActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/adView"
+        android:layout_below="@+id/app_bar">
+
+        <RelativeLayout
+            android:id="@+id/form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <com.rey.material.widget.TextView
+                android:id="@+id/date_picker_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/colorTextSecondary"
+                app:rd_style="@style/Material.Drawable.Ripple.Wave" />
+
+            <com.rey.material.widget.EditText
+                android:id="@+id/amount_field"
+                style="@style/Material.Widget.EditText.Light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_picker_field"
+                android:hint="@string/amount_submit"
+                android:inputType="numberDecimal"
+                android:textColor="@color/colorTextSecondary"
+                app:et_inputId="@+id/amount_field"
+                app:et_labelEnable="true"
+                app:et_supportMode="none"
+                app:rd_style="@style/Material.Drawable.Ripple.Wave" />
+
+            <com.rey.material.widget.EditText
+                android:id="@+id/notes_field"
+                style="@style/Material.Widget.EditText.Light"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/amount_field"
+                android:hint="@string/notes_submit"
+                android:textColor="@color/colorTextSecondary"
+                app:et_inputId="@+id/notes_field"
+                app:et_labelEnable="true"
+                app:et_supportMaxLines="8"
+                app:et_supportMode="none"
+                app:rd_style="@style/Material.Drawable.Ripple.Wave" />
+
+            <com.rey.material.widget.Spinner
+                android:id="@+id/category_field"
+                style="@style/Material.Widget.Spinner.Light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/notes_field"
+                android:layout_marginBottom="5dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dialog"
+                android:textColor="@color/colorTextSecondary"
+                app:rd_style="@style/Material.Drawable.Ripple.Wave"
+                app:spn_label="@string/choose_cat_label"
+                app:spn_labelEnable="true" />
+
+            <com.rey.material.widget.Spinner
+                android:id="@+id/account_field"
+                style="@style/Material.Widget.Spinner.Light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/category_field"
+                android:layout_marginBottom="5dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:spinnerMode="dropdown"
+                android:textColor="@color/colorTextSecondary"
+                app:rd_style="@style/Material.Drawable.Ripple.Wave"
+                app:spn_label="@string/choose_acc_label"
+                app:spn_labelEnable="true" />
+
+
+            <com.rey.material.widget.Button
+                android:id="@+id/submit_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/account_field"
+                android:background="@color/colorAccent"
+                android:onClick="addOutcome"
+                android:text="@string/button_submit"
+                android:textColor="@color/colorText"
+                app:rd_style="@style/Material.Drawable.Ripple.Wave" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
+</RelativeLayout>

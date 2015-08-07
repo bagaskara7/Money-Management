@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.andronomy.moneymanagement.IncomeActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/adView"
+        android:layout_below="@+id/app_bar">
+
+        <RelativeLayout
+            android:id="@+id/form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <com.rey.material.widget.Spinner
+                android:id="@+id/settingsLanguageSpinner"
+                style="@style/Material.Widget.Spinner.Light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp"
+                android:textColor="@color/colorTextSecondary"
+                app:rd_style="@style/Material.Drawable.Ripple.Wave"
+                app:spn_label="@string/choose_lang_label"
+                app:spn_labelEnable="true" />
+
+            <com.rey.material.widget.Spinner
+                android:id="@+id/settingsCurrencySpinner"
+                style="@style/Material.Widget.Spinner.Light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/settingsLanguageSpinner"
+                android:minHeight="50dp"
+                android:textColor="@color/colorTextSecondary"
+                app:rd_style="@style/Material.Drawable.Ripple.Wave"
+                app:spn_label="@string/choose_curr_label"
+                app:spn_labelEnable="true" />
+
+            <com.rey.material.widget.Button
+                android:id="@+id/save_settings_button"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_below="@+id/settingsCurrencySpinner"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorAccent"
+                android:onClick="back"
+                android:text="@string/save_settings_btn"
+                android:textColor="@color/colorText" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
+</RelativeLayout>
